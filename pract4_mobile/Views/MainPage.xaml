@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract4_mobile.Views.MainPage"
+             xmlns:views="clr-namespace:pract4_mobile.Views">
+    <Grid Padding="15" RowDefinitions="Auto, Auto, Auto, Auto" ColumnDefinitions="*, *" VerticalOptions="Center" ColumnSpacing="10" RowSpacing="10">
+        <Label Grid.ColumnSpan="2" HorizontalOptions="Center" Text="Discovery" Style="{StaticResource TitleLabelStyle}"/>
+        <views:MenuView Grid.Column="0" Grid.Row="1" BindingContext="{Binding Bar}"/>
+        <views:MenuView Grid.Column="0" Grid.Row="2" BindingContext="{Binding FineDining}"/>
+        <views:MenuView Grid.Column="0" Grid.Row="3" BindingContext="{Binding Cafes}"/>
+        <views:MenuView Grid.Column="1" Grid.Row="1" BindingContext="{Binding Nearby}"/>
+        <views:MenuView Grid.Column="1" Grid.Row="2" BindingContext="{Binding FastFood}"/>
+        <views:MenuView Grid.Column="1" Grid.Row="3" BindingContext="{Binding FeaturedFoods}"/>
+    </Grid>
+</ContentPage>
